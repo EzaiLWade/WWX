@@ -1,0 +1,26 @@
+/* pages/video/video.wxss */
+#myVideo{
+    width:100%;
+}
+.btn-area{
+    background: #666;
+    border-radius: 20px;
+    opacity: 50%;
+    display:flex;
+    height:30px;
+    margin:0 15px;
+}
+input{
+    flex:1;
+    height:30px;
+    border-radius: 20px;
+    padding-left:15px;
+}
+button{
+    color:#fff;
+    height:30px;
+    line-height: 30px;
+    background: #666;
+    float:right;
+    border-radius: 20px;
+}

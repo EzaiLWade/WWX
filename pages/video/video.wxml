@@ -1,0 +1,25 @@
+<!--pages/video/video.wxml-->
+<view class="section tc">
+  <video id="myVideo" src="http://ezailwade.online/video/01.mp4" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+  <view class="btn-area">
+    <input bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+</view>
+
+<view>
+    <view wx:for="{{videoList}}"
+    wx:for-item="video"
+    wx:for-index="idx"
+    wx:key="{{idx}}"
+    class="vedio">
+        <view class="videoPoster">
+            <image src="{{video.poster}}" data-idx="{{idx}}" bindtap="playVideo"></image>
+        </view>
+        
+            <view class="videoName">{{music.name}}
+            </view>
+
+                </view>
+</view>
+       

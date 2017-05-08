@@ -1,0 +1,19 @@
+<!--pages/music/music.wxml-->
+
+
+<scroll-view scroll-y="true" style="height:{{scrollHeight}}px">
+    <view wx:for="{{musicList}}"
+    wx:for-item="music"
+    wx:for-index="idx"
+    wx:key="{{idx}}"
+    class="music">
+        <view class="musicPoster">
+            <image src="{{music.poster}}" data-idx="{{idx}}" bindtap="playMusic"></image>
+        </view>
+        
+            <view class="musicName">{{music.name}}
+                <view class="musicAuthor">{{music.author}}</view>
+            </view>
+          </view>
+</scroll-view>
+<audio poster="{{music.poster}}" name="{{music.name}}" author="{{music.author}}" src="{{music.src}}" id="myAudio" controls loop></audio>
